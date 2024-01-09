@@ -34,6 +34,11 @@ const Header = () => {
           <p>Бонуская карта</p>
         </div>
       </div>
+      <div className="header-bottom">
+        <div className="header-bottom__buttons">
+          <p>Личный кабинет</p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,41 +1,95 @@
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 13px;
+  width: 100vw;
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 1300px;
+    border-bottom: 1px solid #e5e5e5;
+
+    &__links {
+      display: flex;
+      gap: 20px;
+
+      p {
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          border-bottom: 1px solid #e5e5e5;
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 1300px;
+
+    &__sex {
+      display: flex;
+      gap: 20px;
+
+      p {
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          border-bottom: 1px solid #e5e5e5;
+          transform: translateY(-5px);
+        }
+      }
+    }
+
+    &__bonus {
+      display: flex;
+      gap: 20px;
+
+      p {
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          border-bottom: 1px solid #e5e5e5;
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+  &-bottom {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 13px;
+    background: #f3f4f5;
     width: 100vw;
 
-    &-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 41px;
-        width: 1300px;
-        border-bottom: 1px solid #e5e5e5;
+    &__buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 60px;
+      width: 1300px;
 
-        &__links {
-            display: flex;
-            gap: 20px;
-            cursor: pointer;
+      p {
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          border-bottom: 1px solid #e5e5e5;
+          transform: translateY(-5px);
         }
+      }
     }
-
-    &-body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 65px;
-        width: 1300px;
-
-        &__sex {
-            display: flex;
-            gap: 20px;
-        }
-
-        &__bonus {
-            display: flex;
-            gap: 20px;
-        }
-    }
+  }
 }
